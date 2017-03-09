@@ -2,3 +2,6 @@
 //= require i18n/translations
 
 //= require pageflow/editor/base
+//= require pageflow/before_after/editor
+//= require pageflow/chart/editor
+//= require pageflow/embedded_video/editor

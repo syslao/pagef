@@ -13,6 +13,9 @@ Pageflow.configure do |config|
   config.widget_types.register(Pageflow::ProgressNavigationBar.widget_type)
   config.widget_types.register(Pageflow::ProgressNavigationBar.horizontal_widget_type)
   config.plugin(Pageflow::OutlineNavigationBar.plugin)
+  config.page_types.register(Pageflow::BeforeAfter.page_type)
+  config.page_types.register(Pageflow::EmbeddedVideo.page_type)
+
   # config.page_types.register(Pageflow::Rainbow::PageType.new)
 
   # Add custom themes by invoking the pageflow:theme generator and
