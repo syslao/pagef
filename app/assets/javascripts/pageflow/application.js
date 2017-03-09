@@ -4,3 +4,4 @@
 //= require "pageflow/before_after"
 //= require "pageflow/chart"
 //= require pageflow/embedded_video
+//= require pageflow/external_links

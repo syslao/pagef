@@ -15,6 +15,7 @@ Pageflow.configure do |config|
   config.plugin(Pageflow::OutlineNavigationBar.plugin)
   config.page_types.register(Pageflow::BeforeAfter.page_type)
   config.page_types.register(Pageflow::EmbeddedVideo.page_type)
+  config.page_types.register(Pageflow::ExternalLinks.page_type)
 
   # config.page_types.register(Pageflow::Rainbow::PageType.new)
 
