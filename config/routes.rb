@@ -3,6 +3,8 @@ Rails.application.routes.draw do
   ActiveAdmin.routes(self)
   Pageflow.routes(self)
   mount Pageflow::Chart::Engine, :at => '/chart'
+  mount Pageflow::ExternalLinks::Engine, :at => '/external_links'
+  
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

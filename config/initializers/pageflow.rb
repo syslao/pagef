@@ -16,6 +16,8 @@ Pageflow.configure do |config|
   config.page_types.register(Pageflow::BeforeAfter.page_type)
   config.page_types.register(Pageflow::EmbeddedVideo.page_type)
   config.page_types.register(Pageflow::ExternalLinks.page_type)
+  config.plugin(Pageflow::LinkmapPage.plugin)  
+  config.register_page_type(Pageflow::TextPage.page_type)
 
   # config.page_types.register(Pageflow::Rainbow::PageType.new)
 

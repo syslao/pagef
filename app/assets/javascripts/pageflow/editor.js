@@ -6,3 +6,5 @@
 //= require pageflow/chart/editor
 //= require pageflow/embedded_video/editor
 //= require pageflow/external_links/editor
+//= require pageflow/linkmap_page/editor
+//= require pageflow/text_page/editor

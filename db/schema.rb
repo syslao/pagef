@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170309191609) do
+ActiveRecord::Schema.define(version: 20170309200627) do
 
   create_table "active_admin_comments", force: :cascade do |t|
     t.string   "namespace",     limit: 255
@@ -146,6 +146,20 @@ ActiveRecord::Schema.define(version: 20170309191609) do
   add_index "pageflow_entries", ["folder_id"], name: "index_pageflow_entries_on_folder_id", using: :btree
   add_index "pageflow_entries", ["slug"], name: "index_pageflow_entries_on_slug", unique: true, using: :btree
   add_index "pageflow_entries", ["theming_id"], name: "index_pageflow_entries_on_theming_id", using: :btree
+
+  create_table "pageflow_external_links_sites", force: :cascade do |t|
+    t.integer  "perma_id",        limit: 4
+    t.integer  "revision_id",     limit: 4
+    t.text     "url",             limit: 65535
+    t.string   "title",           limit: 255
+    t.string   "thumbnail",       limit: 255
+    t.text     "description",     limit: 65535
+    t.boolean  "open_in_new_tab"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "pageflow_external_links_sites", ["revision_id"], name: "index_pageflow_external_links_sites_on_revision_id", using: :btree
 
   create_table "pageflow_file_usages", force: :cascade do |t|
     t.integer  "revision_id", limit: 4
