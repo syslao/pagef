@@ -8,3 +8,4 @@
 //= require pageflow/linkmap_page
 //= require pageflow/text_page
 //= require "pageflow/timeline_page"
+//= require pageflow/new_pages_box
