@@ -20,6 +20,7 @@ Pageflow.configure do |config|
   config.register_page_type(Pageflow::TextPage.page_type)
   config.plugin(Pageflow::TimelinePage.plugin)
   config.widget_types.register(Pageflow::NewPagesBox.widget_type, default: true)  
+  config.plugin(Pageflow::ParentPageBox.plugin)
 
   # config.page_types.register(Pageflow::Rainbow::PageType.new)
 
