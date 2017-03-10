@@ -13,6 +13,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'pageflow'
 
 gem 'state_machine', git: 'https://github.com/codevise/state_machine.git'
+gem 'pageflow-react'
 gem 'pageflow-progress-navigation-bar'
 gem 'pageflow-outline-navigation-bar'
 gem 'pageflow-before-after'
@@ -25,7 +26,7 @@ gem 'pageflow-text-page'
 gem 'pageflow-timeline-page'
 gem 'pageflow-new-pages-box'
 gem 'pageflow-parent-page-box'
-
+gem 'pageflow-sitemap'
 
 gem 'figaro'
 gem 'puma'

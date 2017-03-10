@@ -17,10 +17,12 @@ Pageflow.configure do |config|
   config.page_types.register(Pageflow::EmbeddedVideo.page_type)
   config.page_types.register(Pageflow::ExternalLinks.page_type)
   config.plugin(Pageflow::LinkmapPage.plugin)  
-  config.register_page_type(Pageflow::TextPage.page_type)
+  config.page_types.register(Pageflow::TextPage.page_type)
   config.plugin(Pageflow::TimelinePage.plugin)
   config.widget_types.register(Pageflow::NewPagesBox.widget_type, default: true)  
   config.plugin(Pageflow::ParentPageBox.plugin)
+  config.plugin(Pageflow::Sitemap.plugin)
+  config.page_types.register(Pageflow::Panorama.page_type)
 
   # config.page_types.register(Pageflow::Rainbow::PageType.new)
 

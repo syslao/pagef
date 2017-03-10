@@ -10,3 +10,4 @@
 //= require "pageflow/timeline_page"
 //= require pageflow/new_pages_box
 //= require pageflow/parent_page_box
+//= require pageflow/panorama

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170309200627) do
+ActiveRecord::Schema.define(version: 20170310095749) do
 
   create_table "active_admin_comments", force: :cascade do |t|
     t.string   "namespace",     limit: 255
@@ -224,6 +224,33 @@ ActiveRecord::Schema.define(version: 20170309200627) do
 
   add_index "pageflow_pages", ["chapter_id"], name: "index_pageflow_pages_on_chapter_id", using: :btree
   add_index "pageflow_pages", ["perma_id"], name: "index_pageflow_pages_on_perma_id", using: :btree
+
+  create_table "pageflow_panorama_packages", force: :cascade do |t|
+    t.integer  "entry_id",                              limit: 4
+    t.integer  "uploader_id",                           limit: 4
+    t.string   "state",                                 limit: 255
+    t.string   "rights",                                limit: 255
+    t.string   "attachment_on_filesystem_file_name",    limit: 255
+    t.string   "attachment_on_filesystem_content_type", limit: 255
+    t.integer  "attachment_on_filesystem_file_size",    limit: 8
+    t.datetime "attachment_on_filesystem_updated_at"
+    t.string   "attachment_on_s3_file_name",            limit: 255
+    t.string   "attachment_on_s3_content_type",         limit: 255
+    t.integer  "attachment_on_s3_file_size",            limit: 8
+    t.datetime "attachment_on_s3_updated_at"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "unpacking_progress",                    limit: 4
+    t.string   "unpacking_error_message",               limit: 255
+    t.string   "index_document",                        limit: 255
+    t.string   "thumbnail_file_name",                   limit: 255
+    t.string   "thumbnail_content_type",                limit: 255
+    t.integer  "thumbnail_file_size",                   limit: 4
+    t.datetime "thumbnail_updated_at"
+  end
+
+  add_index "pageflow_panorama_packages", ["entry_id"], name: "index_pageflow_panorama_packages_on_entry_id", using: :btree
+  add_index "pageflow_panorama_packages", ["uploader_id"], name: "index_pageflow_panorama_packages_on_uploader_id", using: :btree
 
   create_table "pageflow_revisions", force: :cascade do |t|
     t.integer  "entry_id",                    limit: 4

@@ -9,3 +9,5 @@
 //= require pageflow/linkmap_page/editor
 //= require pageflow/text_page/editor
 //= require pageflow/timeline_page/editor
+//= require pageflow/sitemap/editor
+//= require pageflow/panorama/editor

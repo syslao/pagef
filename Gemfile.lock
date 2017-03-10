@@ -272,6 +272,8 @@ GEM
       multi_json (~> 1.11)
       pageflow (~> 0.10)
       react-rails (~> 1.6.0)
+    pageflow-sitemap (0.1.0)
+      pageflow (~> 0.10)
     pageflow-text-page (0.3.0)
       i18n-js
       pageflow (~> 0.10)
@@ -436,6 +438,8 @@ DEPENDENCIES
   pageflow-panorama
   pageflow-parent-page-box
   pageflow-progress-navigation-bar
+  pageflow-react
+  pageflow-sitemap
   pageflow-text-page
   pageflow-timeline-page
   puma
