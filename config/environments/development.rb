@@ -40,5 +40,5 @@ Rails.application.configure do
   # config.action_view.raise_on_missing_translations = true
   ActionMailer::Base.delivery_method = :smtp
 
-  config.action_mailer.default_url_options = { :host => 'sarad.io' }
+  config.action_mailer.default_url_options = { :host => ENV['HOST_NAME'] }
 end
