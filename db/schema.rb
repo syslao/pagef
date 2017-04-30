@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170310095749) do
+ActiveRecord::Schema.define(version: 20170413095848) do
 
   create_table "active_admin_comments", force: :cascade do |t|
     t.string   "namespace",     limit: 255
@@ -304,14 +304,15 @@ ActiveRecord::Schema.define(version: 20170310095749) do
     t.integer  "account_id",                     limit: 4
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "cname",                          limit: 255, default: "",   null: false
+    t.string   "cname",                          limit: 255,  default: "",   null: false
     t.string   "theme_name",                     limit: 255
-    t.string   "home_url",                       limit: 255, default: "",   null: false
-    t.boolean  "home_button_enabled_by_default",             default: true, null: false
+    t.string   "home_url",                       limit: 255,  default: "",   null: false
+    t.boolean  "home_button_enabled_by_default",              default: true, null: false
     t.string   "additional_cnames",              limit: 255
     t.string   "default_author",                 limit: 255
     t.string   "default_publisher",              limit: 255
     t.string   "default_keywords",               limit: 255
+    t.string   "avatar",                         limit: 1000
   end
 
   add_index "pageflow_themings", ["cname"], name: "index_pageflow_themings_on_cname", using: :btree

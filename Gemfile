@@ -11,6 +11,8 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'pageflow'
+gem 'carrierwave'
+gem 'mini_magick'
 
 gem 'state_machine', git: 'https://github.com/codevise/state_machine.git'
 gem 'pageflow-react'
