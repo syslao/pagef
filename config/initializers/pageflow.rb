@@ -1,7 +1,7 @@
 Pageflow.configure do |config|
   # The email address to use as from header in invitation mails to new
   # users.
-  config.mailer_sender = 'change-me-at-config-initializers-pageflow@example.com'
+  config.mailer_sender = 'invite@sarad.net'
 
   # Page types available in the editor. Add futher page types from
   # page type engines below.
@@ -16,10 +16,10 @@ Pageflow.configure do |config|
   config.page_types.register(Pageflow::BeforeAfter.page_type)
   config.page_types.register(Pageflow::EmbeddedVideo.page_type)
   config.page_types.register(Pageflow::ExternalLinks.page_type)
-  config.plugin(Pageflow::LinkmapPage.plugin)  
+  config.plugin(Pageflow::LinkmapPage.plugin)
   config.page_types.register(Pageflow::TextPage.page_type)
   config.plugin(Pageflow::TimelinePage.plugin)
-  config.widget_types.register(Pageflow::NewPagesBox.widget_type, default: true)  
+  config.widget_types.register(Pageflow::NewPagesBox.widget_type, default: true)
   config.plugin(Pageflow::ParentPageBox.plugin)
   config.plugin(Pageflow::Sitemap.plugin)
   config.page_types.register(Pageflow::Panorama.page_type)
